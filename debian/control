@@ -1,0 +1,13 @@
+Source: ros-extendablelyrical-gz-demo-math
+Section: misc
+Priority: optional
+Maintainer: "Jose Luis Rivero" <jrivero@honurobotics.com>
+Build-Depends: debhelper (>= 9.0.0), cmake, libgtest-dev, libgtest-dev <!nocheck>, ros-extendablejetty-gz-math, ros-extendablelyrical-ros-workspace
+Homepage: https://index.ros.org/p/gz-demo-math/#extendablelyrical
+Standards-Version: 3.9.2
+
+Package: ros-extendablelyrical-gz-demo-math
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-extendablejetty-gz-math, ros-extendablelyrical-ros-workspace
+Description: Trivial consumer of Gazebo Math.
+ Exists to prove that a distribution with no ROS lineage can resolve Gazebo dependencies through a REP-2015 extension of Gazebo Jetty.
